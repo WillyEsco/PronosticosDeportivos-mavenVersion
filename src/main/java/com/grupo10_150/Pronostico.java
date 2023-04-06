@@ -1,6 +1,7 @@
 package com.grupo10_150;
 
 public class Pronostico {
+
     private int rondaNro;
     private int matchNro; 
     private Partido partido;
@@ -9,13 +10,12 @@ public class Pronostico {
 
 
 
-    public Pronostico(Partido partido, Equipo equipo, ResultadoEnum resultadoPronosticado, int rondaNro, int matchNro ) {
+    public Pronostico(int rondaNro, int matchNro, Partido partido, Equipo equipo, ResultadoEnum resultadoPronosticado) {
         this.partido = partido;
         this.equipo = equipo;
         this.resultadoPronosticado = resultadoPronosticado;
         this.rondaNro = rondaNro;
         this.matchNro = matchNro;
-
     }
     public double getPuntos() {
         double puntos = 0;

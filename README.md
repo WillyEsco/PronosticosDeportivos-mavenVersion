@@ -1,15 +1,13 @@
 # __Pronósticos Deportivos__  -  ___Grupo 10/150___
-##  ___Entrega 1___ - (version maven) 
+##  ___Entrega 1___ (incluye openCsv y Lombok) 
 ## __Datos de la Presentación__
 
-#### Fecha Primer Entrega: ` 4 de abril del 2023 (clase 12)`
+#### Fecha Primer Entrega: ` semana del 4 de abril del 2023 (clase 12)`
 >##### Integrantes por orden alfabético:
 >* __`Guillermo Escobar`__
 >* __`Norma Ramirez`__
 >* __`Pablo Martin Torres`__
 >* __`Juan Carlos Alderete`__
-
-<br>
 
 ## **Comandos simples para ejecutar con maven**
 
@@ -38,8 +36,8 @@ mvn exec:java -Dexec.mainClass=com.grupo10_150.App
             │   ├── Ronda.java
             │   └── App.java
             └── resources
-                └── partidos.txt
-                └── resultados.txt
+                └── pronostico.csv
+                └── resultados.csv
 
    
 ```

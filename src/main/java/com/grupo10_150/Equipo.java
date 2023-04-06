@@ -8,7 +8,6 @@ public class Equipo {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
-
     }
     public int getId() {
         return this.id;

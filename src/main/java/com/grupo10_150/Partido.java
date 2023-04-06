@@ -1,6 +1,4 @@
 package com.grupo10_150;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class Partido {
