@@ -1,5 +1,5 @@
 # __Pronósticos Deportivos__  -  ___Grupo 10/150___
-##  ___Entrega 1___ (incluye openCsv y Lombok) 
+##  ___Entrega 1___ (con openCsv y Lombok) 
 ## __Datos de la Presentación__
 
 #### Fecha Primer Entrega: ` semana del 4 de abril del 2023 (clase 12)`
