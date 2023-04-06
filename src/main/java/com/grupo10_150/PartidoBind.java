@@ -1,8 +1,5 @@
 package com.grupo10_150;
 import com.opencsv.bean.CsvBindByPosition;
-import com.opencsv.bean.CsvBindByName;
-
-import java.util.ArrayList;
 
 import lombok.AllArgsConstructor;
 //Lombok
@@ -12,14 +9,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
-
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor  
-
-
-
 
 public class PartidoBind {
     @CsvBindByPosition(position = 0) 

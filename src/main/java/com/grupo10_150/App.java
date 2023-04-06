@@ -8,7 +8,6 @@ package com.grupo10_150;
 import java.util.ArrayList;
 
 
-
 public class App {
 
     public static  void main(String[] args) throws Exception {
@@ -36,25 +35,15 @@ public class App {
              resuFile = ".\\src\\test\\resources\\resultados.csv";
              pronFile= ".\\src\\test\\resources\\pronostico.csv";
         }
-        // inicializo variables
- 
 
-
-        // Leo los resultados y obtengo un array de los pronosticos
-       // List<Partido> partidosList = leerResultados(resuFile);
        LectorCsv lectorCsv = new LectorCsv(resuFile,pronFile);
 
        //Obtengo todas las líneas del archivo CSV
        lectorCsv.parsearResultados();
-    //    System.out.println("Partidos: " + lectorCsv.lineasResultados.size());
        lectorCsv.parsearProde();
-    //    System.out.println("Partidos Prode: " + lectorCsv.lineasProde.size());
 
        ArrayList <Partido> partidosList = lectorCsv.crearResultados();
-    //    System.out.println("Partidos: " + partidosList.size());
        ArrayList <Pronostico> pronosticosList = lectorCsv.crearPronosticos(partidosList);
-
-        // System.out.println("Partidos: " + partidosList.size());
 
         // Calculo los puntos
         double puntos= 0;

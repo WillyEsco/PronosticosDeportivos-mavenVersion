@@ -1,7 +1,6 @@
 package com.grupo10_150;
 import com.opencsv.bean.CsvBindByPosition;
 
-import lombok.AllArgsConstructor;
 //Lombok
 import lombok.Data;
 import lombok.Getter;

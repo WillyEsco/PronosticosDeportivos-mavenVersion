@@ -9,7 +9,6 @@ public class Pronostico {
     private ResultadoEnum resultadoPronosticado;
 
 
-
     public Pronostico(int rondaNro, int matchNro, Partido partido, Equipo equipo, ResultadoEnum resultadoPronosticado) {
         this.partido = partido;
         this.equipo = equipo;
