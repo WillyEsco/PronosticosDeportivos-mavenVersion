@@ -34,6 +34,9 @@ mvn exec:java -Dexec.mainClass=com.grupo10_150.App
             │   ├── Partido.java
             │   ├── Resultado.java
             │   ├── Ronda.java
+            │   ├── ResultadoBind.java
+            │   ├── PronosticoBind.java
+            │   ├── LectorCsv.java
             │   └── App.java
             └── resources
                 └── pronostico.csv
