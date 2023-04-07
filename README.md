@@ -133,6 +133,11 @@ El programa debe:
 Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (un) punto, la salida del programa debe ser:
 
 **Mariana: 2**
-
 **Pedro: 1**
+
+# __Diagrama de Clases entrega 2__ 
+<p align="center">
+  <img  src="./assets/entrega2.png" width="80%" height="80%"  />
+</p>
+ 
 
