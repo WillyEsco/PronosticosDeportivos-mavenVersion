@@ -1,5 +1,6 @@
 # __Pronósticos Deportivos__  -  ___Grupo 10/150___
 ##  ___Entrega 1___ (con openCsv y Lombok) 
+
 ## __Datos de la Presentación__
 
 #### Fecha Primer Entrega: ` semana del 4 de abril del 2023 (clase 12)`
@@ -89,4 +90,49 @@ __Se considera una única ronda y un único participante en esta entrega__
   <img  src="./assets/Dibujo1.jpg" width="80%" height="80%"  />
 </p>
 
+##  ___Entrega 2___ 
+En esta entrega se debe poder soportar que los archivos contengan información de muchas
+rondas y de muchas personas (para eso hay que agregar los datos de ronda y persona en los
+archivos correspondientes).
+Por otro lado, al leer cada línea del archivo de resultados, se debe verificar que la misma sea
+correcta: número correcto de campos y que la cantidad de goles sea un número entero. Cada
+ronda puede tener cualquier cantidad de partidos.
+Al finalizar el programa, se debe imprimir un listado de los puntajes de cada persona que
+participa.
+<br>
+El programa debe:
+
+- Utilizar la herramienta Maven y su estructura de proyecto. La misma debe estar implementada en el repositorio de GIT escogido.
+- Imprimir por pantalla el nombre de cada persona, el puntaje total y la cantidad de pronósticos acertados.
+- Implementar un test (al menos uno, pero se recomienda hacer más) que calcule el puntaje de una persona en 2 (dos) rondas consecutivas.
+
+### Ejemplo:
+
+#### Archivo resultados.csv:
+
+| Ronda |    Equipo 1    | Cant. goles 1 | Cant. goles 2 |    Equipo 2    |
+| :---: | :------------: | :-----------: | :-----------: | :------------: |
+|   1   |   Argentina    |       1       |       2       | Arabia Saudita |
+|   1   |    Polonia     |       0       |       0       |     México     |
+|   1   |   Argentina    |       2       |       0       |     México     |
+|   1   | Arabia Saudita |       0       |       2       |    Polonia     |
+
+#### Archivo pronosticos.csv:
+
+| Participante | Equipo 1       | Gana 1 | Empata | Gana 2 | Equipo 2       |
+| ------------ | -------------- | ------ | ------ | ------ | -------------- |
+| Mariana      | Argentina      | X      |        |        | Arabia Saudita |
+| Mariana      | Polonia        |        | X      |        | México         |
+| Mariana      | Argentina      | X      | México |        | México         |
+| Mariana      | Arabia Saudita |        |        | X      | Polonia        |
+| Pedro        | Argentina      | X      |        |        | Arabia Saudita |
+| Pedro        | Polonia        |        |        | X      | México         |
+| Pedro        | Argentina      | X      |        |        | México         |
+| Pedro        | Arabia Saudita |        | X      |        | Polonia        |
+
+Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (un) punto, la salida del programa debe ser:
+
+**Mariana: 2**
+
+**Pedro: 1**
 
