@@ -2,30 +2,30 @@ package com.grupo10_150;
 
 
 public class Partido {
+    private int rondaNro;
     private Equipo equipo1;
     private Equipo equipo2;
     private int golesEquipo1;
     private int golesEquipo2;
-    private int rondaNro;
     private int matchNro; 
-   
 
-    public Partido(Equipo equipoUno, Equipo equipoDos, int goles1, int goles2, int  rondaNro, int matchNro) {
+    public Partido(int  rondaNro,Equipo equipoUno, Equipo equipoDos, int goles1, int goles2,  int matchNro) {
+        this.rondaNro = rondaNro;
         this.equipo1 = equipoUno;
         this.equipo2 = equipoDos;
         this.golesEquipo1 = goles1;
         this.golesEquipo2 = goles2; 
-        this.rondaNro = rondaNro;
         this.matchNro = matchNro;
     }
-
+    public Partido(){
+    }
     public int getGana() {
 
         if (this.golesEquipo1 > this.golesEquipo2) {
-            return this.equipo1.getId();
+            return this.equipo1.getEquipoID();
         }
         if (this.golesEquipo1 < this.golesEquipo2) {
-            return this.equipo2.getId();
+            return this.equipo2.getEquipoID();
         } 
            return 0;
         
@@ -69,7 +69,10 @@ public class Partido {
         this.rondaNro = rondaNro;
     }
 
-
+    public String toString() {
+        return "Partido [rondaNro=" + rondaNro + ", equipo1=" + equipo1 + ", equipo2=" + equipo2 + ", golesEquipo1="
+                + golesEquipo1 + ", golesEquipo2=" + golesEquipo2 + ", matchNro=" + matchNro + "]";
+    }
 
     
 }

@@ -1,31 +1,22 @@
 package com.grupo10_150;
+//Lombok
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@Data
+@Setter
+@Getter
+@NoArgsConstructor  
 public class Equipo {
-    private int id;
+    private int equipoID;
     private String nombre;
     private String descripcion;
 
-    public Equipo( int id, String nombre, String descripcion) {
-        this.id = id;
+    public Equipo(int equipoID, String nombre, String descripcion) {
+        this.equipoID = equipoID;
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
-    public int getId() {
-        return this.id;
-    }
-    public String getNombre() {
-        return this.nombre;
-    }
-    public String getDescripcion() {
-        return this.descripcion;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-    
+  
 }

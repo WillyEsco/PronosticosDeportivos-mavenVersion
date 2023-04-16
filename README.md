@@ -1,9 +1,9 @@
 # __Pronósticos Deportivos__  -  ___Grupo 10/150___
-##  ___Entrega 1___ (con openCsv y Lombok) 
+##  ___Entrega 2___ (con varias rondas y varios participantes) 
 
 ## __Datos de la Presentación__
 
-#### Fecha Primer Entrega: ` semana del 4 de abril del 2023 (clase 12)`
+#### Fecha Segunda Entrega: con la tercera
 >##### Integrantes por orden alfabético:
 >* __`Guillermo Escobar`__
 >* __`Norma Ramirez`__
@@ -87,7 +87,7 @@ __Se considera una única ronda y un único participante en esta entrega__
 
 # __Diagrama de Clases Aumentado__ 
 <p align="center">
-  <img  src="./assets/Dibujo1.jpg" width="80%" height="80%"  />
+  <img  src="./assets/Dibujo1.png" width="80%" height="80%"  />
 </p>
 
 ##  ___Entrega 2___ 
@@ -123,7 +123,7 @@ El programa debe:
 | ------------ | -------------- | ------ | ------ | ------ | -------------- |
 | Mariana      | Argentina      | X      |        |        | Arabia Saudita |
 | Mariana      | Polonia        |        | X      |        | México         |
-| Mariana      | Argentina      | X      | México |        | México         |
+| Mariana      | Argentina      | X      |        |        | México         |
 | Mariana      | Arabia Saudita |        |        | X      | Polonia        |
 | Pedro        | Argentina      | X      |        |        | Arabia Saudita |
 | Pedro        | Polonia        |        |        | X      | México         |
@@ -137,7 +137,7 @@ Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (u
 
 # __Diagrama de Clases entrega 2__ 
 <p align="center">
-  <img  src="./assets/entrega2.png" width="80%" height="80%"  />
+  <img  src="./assets/entrega2.png" width="90%" height="90%"  />
 </p>
  
 

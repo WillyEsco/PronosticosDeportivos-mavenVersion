@@ -7,32 +7,24 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 @Data
-
 @Setter
 @Getter
-
 @NoArgsConstructor  
 
 public class PronosticoBind {
     @CsvBindByPosition(position = 0)
-    private int equipo1_id;
+    private int participanteID;   
     @CsvBindByPosition(position = 1)
-    private String gana1; 
+    private String nombre;   
     @CsvBindByPosition(position = 2)
-    private String empata;
+    private int equipo1ID;
     @CsvBindByPosition(position = 3)
-    private String gana2;
+    private String gana1; 
     @CsvBindByPosition(position = 4)
-    private int equipo2_id;
-
-
-    public PronosticoBind(int equipo1_id, String gana1, String empata, String gana2, int equipo2_id) {
-        this.equipo1_id = equipo1_id;
-        this.gana1 = gana1;
-        this.empata = empata;
-        this.gana2 = gana2;
-        this.equipo2_id = equipo2_id;
-    }
-   
+    private String empata;
+    @CsvBindByPosition(position = 5)
+    private String gana2;
+    @CsvBindByPosition(position = 6)
+    private int equipo2ID;   
 }
 

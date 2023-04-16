@@ -1,24 +1,30 @@
 package com.grupo10_150;
-public class Ronda {
-    private int nro;
-    private Partido[] partidos;
+ 
+import java.util.ArrayList;
 
-    public Ronda(int  nro, Partido[] partidos) {
+
+/**
+ *
+ * @author Willy
+ */
+//Lombok
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@Data
+@Setter
+@Getter
+@NoArgsConstructor  
+
+public class Ronda {
+    private int rondaID;
+    private int nro;
+    private ArrayList<Partido> partidosRonda;
+
+    public Ronda(int rondaID, int nro, ArrayList<Partido> partidosRonda) {
+        this.rondaID = rondaID;
         this.nro = nro;
-        this.partidos = partidos;
+        this.partidosRonda = partidosRonda;
     }
-    public int getNro() {
-        return this.nro;
-    }
-    public Partido[] getPartidos() {
-        return this.partidos;
-    }
-    
-    public void setNro(int nro) {
-        this.nro = nro;
-    }
-    public void setPartidos(Partido[] partidos) {
-        this.partidos = partidos;
-    }
-    
 }
